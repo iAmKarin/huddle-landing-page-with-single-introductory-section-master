@@ -16,6 +16,12 @@
     align-items: center;
     border-radius: 50%;
     border: 0.8px solid $color-text-white;
+    cursor: pointer;
+    transition: color 0.3s, border 0.3s;
+    &:hover {
+      color: $color-bg-button;
+      border: 0.8px solid $color-hover-social;
+    }
     & i {
       font-size: 1.4rem;
     }
