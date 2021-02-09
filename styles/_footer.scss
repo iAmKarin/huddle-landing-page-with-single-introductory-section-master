@@ -19,7 +19,7 @@
     cursor: pointer;
     transition: color 0.3s, border 0.3s;
     &:hover {
-      color: $color-bg-button;
+      color: $color-hover-social;
       border: 0.8px solid $color-hover-social;
     }
     & i {
