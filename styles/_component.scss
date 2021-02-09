@@ -9,7 +9,25 @@
   }
 }
 
+@media only screen and (min-width: $tablet-large) {
+  .logo {
+    width: 21.5rem;
+    padding-left: 7rem;
+    padding-top: 5.3rem;
+  }
+}
+@media only screen and (min-width: $tablet-large) {
+  main {
+    display: flex;
+  }
+}
+
 // SECTION IMAGES
+.images {
+  display: flex;
+  justify-content: center;
+}
+
 .images-container {
   max-width: 31rem;
   padding: 2.5rem 3.6rem;
@@ -17,20 +35,43 @@
     width: 100%;
   }
 }
+@media only screen and (min-width: $tablet-small) {
+  .images-container {
+    max-width: 50rem;
+    padding: 3.2rem 0 0 0rem;
+  }
+}
+@media only screen and (min-width: $tablet-large) {
+  .images-container {
+    max-width: 71rem;
+    padding: 5.2rem 0 0 7.3rem;
+  }
+}
 
 // SECTION COMMUNITY
 .community {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 52rem;
+    text-align: center;
+  }
   & h1 {
     font-size: 2.4rem;
     line-height: 3.6rem;
     padding: 1.3rem 4.8rem 0rem;
     text-transform: capitalize;
   }
+
   & p {
     font-size: 1.6rem;
     line-height: 2.4rem;
     padding: 0 3.6rem;
+    margin: 0;
   }
   & .btn {
     width: 20rem;
@@ -38,10 +79,55 @@
     font-family: "Poppins", sans-serif;
     font-size: 1.2rem;
     color: $color-bg-purple;
-    border-radius: 2rem;
+    border-radius: 2.4rem;
     background-color: $color-text-white;
     border: 0;
-    margin-top: 0.6rem;
-    box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.27);
+    margin-top: 2.4rem;
+    box-shadow: 0.1rem 0.3rem 0.5rem 0 rgba(0, 0, 0, 0.27);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+
+    &:hover {
+      background-color: $color-bg-button;
+    }
+    &:active {
+      border: none;
+      transform: translateY(0.2rem);
+      box-shadow: 0.2rem 0.4rem 0.9rem 0.3rem rgba(0, 0, 0, 0.27);
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+@media only screen and (min-width: $tablet-large) {
+  .community-container {
+    text-align: left;
+    max-width: 57rem;
+    align-items: flex-start;
+    margin-right: 2.5rem;
+    & h1 {
+      font-size: 4rem;
+      line-height: 6rem;
+      padding: 6.5rem 0 0 5.3rem;
+      margin-bottom: 0;
+    }
+    & p {
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      padding: 2.4rem 0 0 5.3rem;
+    }
+    & .btn {
+      height: 5.6rem;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.8rem;
+      color: $color-bg-purple;
+      border-radius: 2.8rem;
+      background-color: $color-text-white;
+      border: 0;
+      margin-top: 2.4rem;
+      box-shadow: 0.2rem 0.4rem 0.9rem 0.3rem rgba(0, 0, 0, 0.27);
+      margin-left: 5.4rem;
+    }
   }
 }

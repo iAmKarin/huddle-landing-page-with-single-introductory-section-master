@@ -1,3 +1,8 @@
 .header {
   height: 10rem;
 }
+@media only screen and (min-width: $tablet-large) {
+  .header {
+    height: 14rem;
+  }
+}
