@@ -1,6 +1,12 @@
 // colors
 $color-bg-purple: #684bb1;
+$color-bg-button: #e882e8;
 $color-text-white: #fff;
+
+//query sizes
+$tablet-small: 768px;
+$tablet-large: 1024px;
+$desktop: 1440px;
 
 // font
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap");
@@ -8,7 +14,6 @@ $color-text-white: #fff;
 
 html {
   font-size: 62.5%;
-
   color: $color-text-white;
 }
 
